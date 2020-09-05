@@ -6,12 +6,14 @@ p,
 li {
   font-size: 15px;
 }
-/* h1,h2,h3,h4{
-    font-weight: lighter;
-} */
+ul {
+  padding-inline-start: 30px;
+}
+
 .header {
   background-color: rgb(25, 39, 51);
   color: white;
+  padding-top: 20px;
 }
 .header-items {
   display: flex;
@@ -48,6 +50,7 @@ li {
 }
 .social {
   background-color: rgb(4, 6, 15);
+  margin-top: 20px;
 }
 .social span {
   margin-right: 10px;
@@ -72,7 +75,7 @@ li {
   padding: 5px 15px;
   margin: 5px 5px;
   list-style-type: none;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #ffd027;
 }
 .skillset li::before {
@@ -92,20 +95,27 @@ li {
 .interest-items {
   margin-top: 10px;
   display: flex;
+  flex-wrap: wrap;
+  /* padding: 5px 15px; */
 }
 .interest-items div {
-  margin-right: 15px;
+  margin-right: 8px;
+  margin-bottom: 5px;
 }
 ul {
   list-style-type: none;
 }
 li {
   display: flex;
+  margin-bottom: 10px;
+  position: relative;
 }
 li::before {
-  display: block;
   content: '•';
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 30px;
   color: #ffd027;
+  position: absolute;
+  top: -15px;
+  left: -20px;
 }
